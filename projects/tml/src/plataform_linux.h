@@ -1,0 +1,7 @@
+#ifndef PLATAFORM_LINUX_H
+#define PLATAFORM_LINUX_H
+
+
+
+#endif /*PLATAFORM_LINUX_H*/
+

@@ -1,0 +1,13 @@
+#ifndef MAPEEDITOR_H_INCLUDED
+#define MAPEEDITOR_H_INCLUDED
+
+#include <SDL.h>
+
+#define MAPE_WIDTH  800
+#define MAPE_HEIGHT 600
+#define MAPE_BPP     32
+#define MAPE_FPS     12
+#define MAPE_FLAGS  (SDL_SWSURFACE | SDL_RESIZABLE)
+#define MAPE_TITLE  "MAPE Map Editor"
+
+#endif /*MAPEEDITOR_H_INCLUDED*/

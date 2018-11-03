@@ -1,0 +1,37 @@
+ -- C89 --
+<assert.h> [ ]
+<ctype.h>  [ ]
+<errno.h>  [ ]
+<float.h>  [ ]
+<limits.h> [ ]
+<locale.h> [ ]
+<math.h>   [ ]
+<setjmp.h> [ ]
+<signal.h> [ ]
+<stdarg.h> [ ]
+<stddef.h> [ ]
+<stdio.h>  [ ]
+<stdlib.h> [ ]
+<string.h> [ ]
+<time.h>   [ ]
+
+ -- C99 --
+<complex.h>  [ ]
+<fenv.h>     [ ]
+<inttypes.h> [ ]
+<stdbool.h>  [ ]
+<stdint.h>   [ ]
+<tgmath.h>   [ ]
+
+ -- NA1 --
+<iso646.h> [ ]
+<wchar.h>  [ ]
+<wctype.h> [ ]
+
+ -- C11 --
+<stdalign.h>    [ ]
+<stdatomic.h>   [ ]
+<stdnoreturn.h> [ ]
+<threads.h>     [ ]
+<uchar.h>       [ ]
+

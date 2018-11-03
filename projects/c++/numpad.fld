@@ -1,0 +1,55 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0300 
+header_name {.h} 
+code_name {.cxx}
+Function {make_window(int argc, char **argv)} {open selected private
+} {
+  Fl_Window {} {open
+    xywh {546 276 120 160} type Double visible
+  } {
+    Fl_Button {} {
+      label 9
+      tooltip 9 xywh {0 0 40 40}
+    }
+    Fl_Button {} {
+      label 8
+      tooltip 8 xywh {40 0 40 40}
+    }
+    Fl_Button {} {
+      label 7
+      tooltip 7 xywh {80 0 40 40}
+    }
+    Fl_Button {} {
+      label 6
+      tooltip 6 xywh {0 40 40 40}
+    }
+    Fl_Button {} {
+      label 5
+      tooltip 5 xywh {40 40 40 40}
+    }
+    Fl_Button {} {
+      label 4
+      tooltip 4 xywh {80 40 40 40}
+    }
+    Fl_Button {} {
+      label 3
+      tooltip 3 xywh {0 80 40 40}
+    }
+    Fl_Button {} {
+      label 2
+      tooltip 2 xywh {40 80 40 40}
+    }
+    Fl_Button {} {
+      label 1
+      tooltip 1 xywh {80 80 40 40}
+    }
+    Fl_Button {} {
+      label 0
+      tooltip 0 xywh {0 120 80 40}
+    }
+    Fl_Button {} {
+      label {,}
+      tooltip {,} xywh {80 120 40 40}
+    }
+  }
+} 

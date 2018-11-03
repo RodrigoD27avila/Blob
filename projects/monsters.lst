@@ -1,0 +1,8 @@
+
+1: - name: Dragon
+   ^
+	110: error in definition
+
+35:       damage: 8
+                   ^
+	113: unexpected end of file

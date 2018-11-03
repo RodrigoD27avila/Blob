@@ -1,0 +1,2 @@
+#!/bin/bash
+gvim -font="osaka_unicode 9"　-geometry 110x60

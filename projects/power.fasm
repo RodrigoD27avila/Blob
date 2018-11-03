@@ -1,0 +1,18 @@
+format ELF64 executable 3
+
+segment readable executable
+
+entry $
+	push	3
+	push	2
+	call	power
+
+power:
+	push	word [ebp]
+	mov	ebp, esp
+	sub	esp, 4
+	mov	ebx, [ebp+8]
+	mov	ecx, [ebp+12]
+	mov	[ebp-4], ebx
+	
+	

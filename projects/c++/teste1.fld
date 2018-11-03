@@ -1,0 +1,41 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0300 
+header_name {.h} 
+code_name {.cxx}
+Function {make_window()} {open
+} {
+  Fl_Window {} {open
+    xywh {672 265 195 200} type Double visible
+  } {
+    Fl_Pack {} {open
+      xywh {0 0 195 200}
+    } {
+      Fl_Button {} {
+        label button
+        xywh {0 0 66 20}
+      }
+      Fl_Button {} {
+        label button
+        xywh {0 20 66 20}
+      }
+      Fl_Button {} {
+        label button
+        xywh {65 20 66 20}
+      }
+      Fl_Button {} {
+        label button
+        xywh {130 0 65 40}
+      }
+      Fl_Button {} {
+        label button
+        xywh {65 0 66 20}
+      }
+      Fl_Input {} {
+        xywh {0 40 195 25}
+      }
+      Fl_Clock {} {
+        xywh {0 65 195 135}
+      }
+    }
+  }
+} 

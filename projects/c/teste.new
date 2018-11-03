@@ -1,0 +1,38 @@
+#include <io.h>
+
+using std::io::output
+
+
+
+
+/*
+char
+short
+int
+long
+
+unsigned
+signed
+
+typedef
+sizeof
+
+namespace
+
+*/
+
+struct Fuu : Object, io {
+
+	int *a;
+	Fuu *fuu;
+	
+	Fuu();
+	~Fuu();
+};
+
+Fuu::Fuu() {
+	a = 10;
+	b = 11;
+}
+
+

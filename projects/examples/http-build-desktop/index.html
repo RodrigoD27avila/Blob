@@ -1,0 +1,997 @@
+
+
+
+<!DOCTYPE html PUBLIC
+  "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      lang="en">
+
+  
+    
+    
+    
+    
+    
+    
+
+  
+
+  <head>
+
+    <meta http-equiv="Content-Type"
+          content="text/html;charset=utf-8" />
+
+    
+      <base href="https://qt.nokia.com/home" /><!--[if lt IE 7]></base><![endif]-->
+    
+
+    <meta name="generator" content="Plone - http://plone.org" />
+
+    <link rel="kss-base-url" href="https://qt.nokia.com/home" />
+
+  
+  
+    
+      <script type="text/javascript"
+              src="https://qt.nokia.com/portal_javascripts/Qt%20Theme%202010/jquery-cachekey6228.js">
+      </script>
+    
+    
+  
+
+  
+    
+      <script type="text/javascript"
+              src="https://qt.nokia.com/portal_javascripts/Qt%20Theme%202010/cornerstone_hotspot-cachekey0150.js">
+      </script>
+    
+    
+  
+
+  
+  
+    
+    
+      <style type="text/css"><!-- @import url(https://qt.nokia.com/portal_css/Qt%20Theme%202010/base-cachekey3874.css); --></style>
+    
+    
+  
+
+  
+  <link rel="kinetic-stylesheet" type="text/css"
+        href="https://qt.nokia.com/portal_kss/Qt%20Theme%202010/at-cachekey7428.kss" />
+
+
+<title>Qt - A cross-platform application and UI framework</title>
+
+    <meta content="Develop applications and user interfaces once, and deploy them across Windows, Mac, Linux/X11, embedded Linux, Windows CE, Meego and S60 without rewriting the source code. Qt Development Frameworks was formerly known as Trolltech before getting acquired by Nokia in June 2008. "
+          name="description" />
+    <meta content="qt, qt jambi, jambi, qtjambi, qt development, qt framework, qt toolkit, qt widgets, qt creator, creator, qtcreator, 3d visualization, application framework, c++, c++ development, class library, cross-platform, eclipse, embedded linux, gui, mobile, opengl, phone GUI, toolkit, trolltech, visual studio"
+          name="keywords" />
+    <meta content="Global" name="distribution" />
+    <meta content="ALL" name="robots" />
+
+    <!-- Internet Explorer Fixes -->
+    <!--[if IE]>
+        <style type="text/css" media="all">@import url(https://qt.nokia.com/IEFixes.css);</style>
+        
+        <script type="text/javascript"
+                src="https://qt.nokia.com/iefixes.js">
+        </script>
+        
+    <![endif]-->
+    
+    <link rel="author"
+          href="https://qt.nokia.com/author/mgranholt"
+          title="Author information" />
+
+
+
+    <link rel="shortcut icon" type="image/x-icon"
+          href="https://qt.nokia.com/favicon.ico" />
+
+
+
+    <link rel="home" href="https://qt.nokia.com"
+          title="Front page" />
+
+    <link rel="contents" href="https://qt.nokia.com/sitemap"
+          title="Site Map" />
+
+
+
+
+
+    <link rel="canonical" href="https://qt.nokia.com/" />
+
+
+
+
+    <link rel="search"
+          href="https://qt.nokia.com/search_form"
+          title="Search this site" />
+
+
+
+    <!-- Disable IE6 image toolbar -->
+    <meta http-equiv="imagetoolbar" content="no" />
+    
+    
+    
+
+    
+    
+      <style type="text/css">
+          .documentFirstHeading {
+              padding-top:0 !important;
+              padding-left:0 !important;            
+              padding-right:0 !important;            
+              margin-top: 0;
+              background: transparent;
+              border: none;
+              margin-bottom: 0;
+              padding-bottom: 0 !important;
+          }
+          .documentByLine {
+              padding-left: 0;
+              margin-top:0;
+              margin-bottom: 0;
+          }
+          .documentDescription {
+              background: transparent;
+              border: none;
+              margin: 0.5em 0;
+              padding: 0 !important;
+              font-size: 1.3em;
+              line-height: 1.3em;
+          }
+      </style> 
+  
+
+    
+    
+
+    
+    
+
+  </head>
+
+  <body class="section-home template-" dir="ltr">
+    <div id="visual-portal-wrapper">
+
+      <div id="portal-top">
+        <div id="portal-header">
+<p class="hiddenStructure">
+  <a accesskey="2"
+     href="https://qt.nokia.com/#documentContent">Skip to content.</a> |
+
+  <a accesskey="6"
+     href="https://qt.nokia.com/#portlet-navigation-tree">Skip to navigation</a>
+</p>
+
+<div id="qt-top-wrapper">
+<ul id="portal-topactions"><li id="topaction-qt_home"><a
+    href="http://qt.nokia.com/" title="Qt HOME">Qt HOME</a></li><li
+    id="topaction-dev"><a href="http://developer.qt.nokia.com"
+                          title="DEV">DEV</a></li><li
+    id="topaction-labs"><a href="http://labs.trolltech.com/blogs/"
+                           title="LABS">LABS</a></li><li
+    id="topaction-doc"><a href="http://qt.nokia.com/doc/"
+                          title="DOC">DOC</a></li><li
+    id="topaction-blog"><a href="http://blog.qt.nokia.com/"
+                           title="BLOG">BLOG</a></li><li
+    id="topaction-shop"><a href="http://shop.qt.nokia.com"
+                           title="SHOP">SHOP</a></li></ul>
+<div class="visualClear"><!-- --></div>
+
+<div id="langselector-wrapper">
+
+    <!-- <strong i18n:translate="text_qtcom_in">Qt in:</strong> -->
+
+    <ul id="portal-languageselector">
+        <li>
+            <span>
+
+                <a href="https://qt.nokia.com/title-ko/switchLanguage?set_language=ko"
+                   class="" id="country-flag-ko" title="한국어">
+
+                    <span>ko</span>
+                    
+                </a>
+
+            </span>
+        </li>
+        <li>
+            
+
+                <a href="https://qt.nokia.com/home/switchLanguage?set_language=en"
+                   class="currentItem" id="country-flag-en"
+                   title="English">
+
+                    <span>en</span>
+                    
+                </a>
+
+            
+        </li>
+        <li>
+            <span>
+
+                <a href="https://qt.nokia.com/title-cn/switchLanguage?set_language=zh"
+                   class="" id="country-flag-zh" title="中文">
+
+                    <span>zh</span>
+                    
+                </a>
+
+            </span>
+        </li>
+        <li>
+            <span>
+
+                <a href="https://qt.nokia.com/title-jp/switchLanguage?set_language=ja"
+                   class="" id="country-flag-ja" title="日本語">
+
+                    <span>ja</span>
+                    
+                </a>
+
+            </span>
+        </li>
+        <li>
+            <span>
+
+                <a href="https://qt.nokia.com/title-fr/switchLanguage?set_language=fr"
+                   class="" id="country-flag-fr"
+                   title="Français">
+
+                    <span>fr</span>
+                    
+                </a>
+
+            </span>
+        </li>
+
+        
+
+    </ul>
+</div>
+
+</div>
+
+<a id="portal-logo" accesskey="1"
+   href="https://qt.nokia.com">
+    <img src="https://qt.nokia.com/logo.png" alt="" title="" height="71" width="59" /></a>
+
+<div id="portal-searchbox">
+    <span class="portletTopLeft"><!-- --></span><span class="portletTopRight"><!-- --></span>     
+    <form name="searchform" id="cse-search-box"
+          action="https://qt.nokia.com/home/@@gcssearchresults">
+
+        <label for="q" class="hiddenStructure">Search Site</label>
+
+        <div class="LSBox">
+        <input type="hidden" name="cx" value="004813305557889797200:imduyjascdq" />
+        <input type="hidden" name="cof" value="FORID:9" />
+        <input type="hidden" name="ie" value="UTF-8" />
+        <input name="q" id="q" type="text" size="30"
+               accesskey="4" class="inputLabel" />
+
+        <!-- <input class="searchButton"
+               type="submit"
+               value="Search"
+               i18n:attributes="value label_search;" /> -->
+               
+       <a class="searchButtonWrapper"><button
+    class="searchButton" type="submit" value="Search"
+    name="sa"><span class="topLeft"><!-- --></span><span class="topRight"><!-- --></span><span>Search</span><span class="bottomLeft"><!-- --></span><span class="bottomRight"><!-- --></span></button></a>               
+    
+        <!-- <div class="searchSection">
+            <input id="searchbox_currentfolder_only" 
+                   class="noborder"
+                   type="checkbox" 
+                   name="path" 
+                   tal:attributes="value view/folder_path"
+                   />
+            <label for="searchbox_currentfolder_only" 
+                   i18n:translate="label_searchbox_currentfolder_only"
+                   style="cursor: pointer">
+                only in current section
+            </label>
+        </div> -->
+
+        <div class="LSResult" id="LSResult" style=""><div class="LSShadow" id="LSShadow"></div></div>
+        </div>
+    </form>
+
+    <div id="portal-advanced-search" class="hiddenStructure">
+        <a href="https://qt.nokia.com/search_form"
+           accesskey="5">
+            Advanced Search&hellip;
+        </a>
+    </div>
+    
+    <span class="portletBottomLeft"><!-- --></span><span class="portletBottomRight"><!-- --></span>
+
+</div>
+
+<div id="qt-banner">
+    <a href="http://qt.nokia.com/qtdevdays2010" title="">
+       <img src="https://qt.nokia.com/promotion-banner/++atfield++image" alt="Promotion Banner" title="Promotion Banner" height="25" width="44" />
+    </a>
+</div>    
+
+</div>
+
+<div id="navwraper">
+    <h5 class="hiddenStructure">Sections</h5>
+    
+        <div id="global-navigation-wrapper">
+            <ul id="portal-globalnav">
+                
+                         
+                <!-- HOMEPAGE TAB IS LOCALIZED -->
+                <li id="portaltab-index_html"
+                    class="selected"><a
+    href="https://qt.nokia.com/" title=""><span>HOME</span></a></li>
+
+                <!-- ALL NORMAL TABS -->
+                
+                
+                         
+                <!-- HOMEPAGE TAB IS LOCALIZED -->
+                
+
+                <!-- ALL NORMAL TABS -->
+                <li id="portaltab-products" class="plain"><a
+    href="https://qt.nokia.com/products" title=""><span>PRODUCTS</span></a></li>
+                
+                         
+                <!-- HOMEPAGE TAB IS LOCALIZED -->
+                
+
+                <!-- ALL NORMAL TABS -->
+                <li id="portaltab-support" class="plain"><a
+    href="https://qt.nokia.com/support" title=""><span>SUPPORT</span></a></li>
+                
+                         
+                <!-- HOMEPAGE TAB IS LOCALIZED -->
+                
+
+                <!-- ALL NORMAL TABS -->
+                <li id="portaltab-qt-in-use" class="plain"><a
+    href="https://qt.nokia.com/qt-in-use" title=""><span>Qt IN USE</span></a></li>
+                
+                         
+                <!-- HOMEPAGE TAB IS LOCALIZED -->
+                
+
+                <!-- ALL NORMAL TABS -->
+                <li id="portaltab-services-partners"
+                    class="plain"><a
+    href="https://qt.nokia.com/services-partners" title=""><span>SERVICES & PARTNERS</span></a></li>
+                
+                         
+                <!-- HOMEPAGE TAB IS LOCALIZED -->
+                
+
+                <!-- ALL NORMAL TABS -->
+                <li id="portaltab-downloads" class="plain"><a
+    href="https://qt.nokia.com/downloads" title=""><span>DOWNLOADS</span></a></li>
+                
+                         
+                <!-- HOMEPAGE TAB IS LOCALIZED -->
+                
+
+                <!-- ALL NORMAL TABS -->
+                <li id="portaltab-about" class="plain"><a
+    href="https://qt.nokia.com/about" title=""><span>ABOUT US</span></a></li>
+                
+                         
+                <!-- HOMEPAGE TAB IS LOCALIZED -->
+                
+
+                <!-- ALL NORMAL TABS -->
+                
+
+            </ul>
+            <span class="visualClear"><!-- --></span>
+        </div>
+</div>
+
+      </div>
+
+      <div class="visualClear" id="clear-space-before-wrapper-table"><!-- --></div>
+
+      <table id="portal-columns">
+        <tbody>
+          <tr>
+            
+            
+            
+
+            
+            <td id="portal-column-content">
+
+              
+                <div class="">
+
+                  
+
+
+                  <div id="region-content" class="documentContent">
+
+                    <span id="contentTopLeft"></span>
+                    <span id="contentTopRight"></span>
+                    
+                    <a name="documentContent"></a>
+
+                    
+
+    <dl class="portalMessage info" id="kssPortalMessage" style="display:none">
+        <dt>Info</dt>
+        <dd></dd>
+    </dl>
+
+
+                    
+                    <div id="viewlet-above-content"></div>
+
+                    
+                    
+                    <div id="content">
+                                             
+                      
+                      <div>
+
+    
+    
+    <div id="frontpage-features-banner">
+        <a id="frontpage-ribbon" href="http://shop.qt.nokia.com" title="Buy Qt">
+            <img src="https://qt.nokia.com/frontpage_ribbon.png"
+                 alt="Buy Qt" />
+        </a>
+        <img src="https://qt.nokia.com/frontpage_banner_gradient.png"
+             alt="" class="bgGradient" />        
+        <div id="frontpage-features-wrapper">        
+            <h1 class="documentFirstHeading"> 
+                
+        <span class="" id="parent-fieldname-title">
+            Qt - Cross-platform application and UI framework
+        </span>
+    
+            </h1>
+    
+            <div id="frontpage-features">
+                
+        <div class="" id="parent-fieldname-text1">
+            
+<table class="qtTable fourColumns">
+<tbody>
+<tr>
+<td>
+<div align="center">
+        <a title="What is Qt?" class="internal-link sprite-products" href="/products"><span class="fpLinkContainer">Product Information, Whitepapers, Videos</span></a></div>
+<h2 style="text-align: center;" class="linkedHeading"><a title="What is Qt?" class="internal-link" href="/products">What is Qt?</a></h2>
+<p align="center">Info, Whitepapers, Videos</p>
+</td>
+<td>
+<div align="center">
+        <a title="Downloads" class="internal-link sprite-downloads" href="/downloads"><span class="fpLinkContainer">Qt SDK, libraries and Qt Creator IDE available under LGPL and GPL licenses, or get a 30 day evaluation of Qt under a commercial license.</span></a></div>
+<h2 style="text-align: center;" class="linkedHeading"><a title="Download" class="internal-link" href="/downloads">Download</a></h2>
+<p align="center">LGPL, GPL, Evaluations</p>
+</td>
+<td>
+<div align="center">
+        <a title="Developers" class="internal-link sprite-developer" href="http://developer.qt.nokia.com/"><span class="fpLinkContainer">Get Started, Docs, Community</span></a></div>
+<h2 style="text-align: center;" class="linkedHeading"><a title="Developers" class="internal-link" href="http://developer.qt.nokia.com/">Developers</a></h2>
+<p align="center">Forum, Wiki, Doc, Community</p>
+</td>
+<td>
+<div align="center">
+        <a title="Industries" class="internal-link sprite-qt-in-use" href="/qt-in-use"><span class="fpLinkContainer">The Qt Industries section contains case stories, applications, screenshots and devices using Qt.</span></a></div>
+<h2 style="text-align: center;" class="linkedHeading"><a title="Qt in Use" class="internal-link" href="/qt-in-use">Qt in Use</a></h2>
+<p align="center">Industries, case studies, videos</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+            
+        </div>
+    
+            </div>
+        </div>
+    </div>
+        
+    <div class="roundedBlock blockWrapper frontpagePromoBlock">
+        <div id="promo-block3">
+            <h3>Updates</h3>
+            
+                <div>
+                    <a href="http://labs.qt.nokia.com/2011/01/21/status-of-qt-modularization/"
+                       class="tile"
+                       title="Blog: the ramblings of engineers">Status of Qt Modularization</a>
+                    <span class="portletItemDetails">Jan 21, 2011</span>
+                </div>
+            
+            
+                <div>
+                    <a href="http://blog.qt.nokia.com/2011/01/21/going-back-qtscape-and-the-first-port-of-mozilla-to-qt/"
+                       class="tile"
+                       title="Blog: The past, present and future of Qt">Going back: Qtscape and the first port of Mozilla to Qt</a>
+                    <span class="portletItemDetails">Jan 21, 2011</span>
+                </div>
+            
+            
+                <div>
+                    <a href="http://blog.qt.nokia.com/2011/01/21/qt-creator-build-service-plug-in/"
+                       class="tile"
+                       title="Blog: The past, present and future of Qt">Qt Creator build service plug-in</a>
+                    <span class="portletItemDetails">Jan 21, 2011</span>
+                </div>
+            
+            
+                <div>
+                    <a href="http://labs.qt.nokia.com/2011/01/20/qt-sdk-1-1-technology-preview-released/"
+                       class="tile"
+                       title="Blog: the ramblings of engineers">Qt SDK 1.1 Technology Preview released</a>
+                    <span class="portletItemDetails">Jan 20, 2011</span>
+                </div>
+            
+            <!--
+            <metal:field use-macro="python:context.widget('promotional_area', mode='view')">
+                Promotional Area
+            </metal:field>
+            -->
+        </div>          
+        
+        <div id="promo-block1">
+            
+<h3>Latest Qt releases</h3>
+<ul><li><a title="The release blog post" class="internal-link" href="http://labs.qt.nokia.com/2010/11/09/qt-4-7-1-released/">Qt 4.7.1</a></li><li><a title="Downloads" class="internal-link" href="/downloads#qt-creator">Qt Creator 2.0.1</a></li><li><a title="New Qt APIs - Mobility Project" class="internal-link" href="/products/qt-addons/mobility">Qt Mobility 1.1.0</a></li></ul>
+
+            <!--
+            <h3><a href="" title="" 
+                   tal:omit-tag="not:context/getNewsURL"
+                   tal:attributes="href string:${context/portal_url}${context/getNewsURL}">
+                       <span tal:condition="not:context/getNewstitle"
+                             i18n:translate="box_news"
+                             i18n:domain="plone">News</span>
+                       <span tal:condition="context/getNewstitle"
+                             tal:content="context/getNewstitle">News</span>                             
+                 </a>
+            </h3>
+            <tal:newsitems  tal:define="toLocalizedTime nocall:context/@@plone/toLocalizedTime;"
+                            tal:repeat="obj newsItems">
+                <div>
+                <a href=""
+                   class="tile"
+                   tal:attributes="href obj/getURL;
+                                   title obj/Description">
+                    <span tal:replace="obj/pretty_title_or_id">
+                    Plone 2.1 announced!
+                    </span>
+                </a>
+                <span class="portletItemDetails"
+                      tal:content="python:toLocalizedTime(obj.Date)">May 5</span>                    
+                </div>
+            </tal:newsitems>
+            -->
+        </div>            
+        <div id="promo-block2">
+            <h3><a href="https://qt.nokia.com/about/events"
+                   title="">
+                       
+                       <span>Upcoming events</span>                             
+                   </a>
+            </h3>                             
+            
+                <div>
+                <a href="https://qt.nokia.com/services-partners/training/open-enrollment-events/qt-quick-for-c-developers-1"
+                   class="tile"
+                   title="The Qt Quick for C++ Developers course is a 2 day introduction to Qt Quick.">
+                    Qt Quick for C++ Developers
+                </a>
+                <span class="portletItemDetails">
+                    
+                        Houston, USA, 
+                    
+                    Feb 08, 2011
+                </span>                    
+                </div>
+            
+            
+                <div>
+                <a href="https://qt.nokia.com/services-partners/training/open-enrollment-events/programming-with-qt-22"
+                   class="tile"
+                   title="The Programming with Qt course is a 4-5 day in-depth introduction to Qt programming. ">
+                    Programming with Qt
+                </a>
+                <span class="portletItemDetails">
+                    
+                        Berlin, Germany, 
+                    
+                    Feb 14, 2011
+                </span>                    
+                </div>
+            
+        </div>
+        <div class="visualClear"><!-- --></div>
+    </div>  
+    
+    <div class="roundedBlock blockWrapper frontpagePromoBlock lastBlockWrapper">
+        <div id="freetextPromotionBlock">
+            
+        <div class="" id="parent-fieldname-text2">
+            
+<h3>Qt 4.7.1 is now released!</h3>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a title="Downloads" class="internal-link" href="downloads"><img class="image-inline" src="images/template/icon-qt-in-a-box" alt="Icon - Qt in a box" /></a>
+<ul><li>New declarative programming</li><li>Significant performance improvements<br /></li></ul>
+<p><a title="What’s New in Qt?" class="internal-link" href="products/whats-new-in-qt">Learn more</a> / <a title="Downloads" class="internal-link" href="downloads">Download</a></p>
+<h3><br /></h3>
+
+            
+        </div>
+    
+        </div>
+        <div id="communityPromotionBlock">
+            <h3>Subscribe to our feeds:</h3>
+            <div class="feed">
+                <a class="feed-icon" href="http://labs.qt.nokia.com/blogs/feed/" />
+                <a class="feed-link"
+                   href="http://labs.qt.nokia.com/blogs/feed/">Labs, developer blogs</a>
+            </div>
+            <div class="feed">
+                <a class="feed-icon" href="http://feeds.feedburner.com/TheQtBlog" />
+                <a class="feed-link"
+                   href="http://feeds.feedburner.com/TheQtBlog">The Qt blog</a>
+            </div>
+            <div class="feed">
+                <br /><br />
+                <!--
+                <a class="qt-icon" href="http://qt.nokia.com/about/news/news/RSS"/>
+                <a class="feed-link" href="http://qt.nokia.com/about/news/news/RSS" i18n:translate="officialnews">Official Qt news</a>
+                -->
+            </div>
+            <div class="spacing-for-feeds">&nbsp;</div>
+            <h3>Follow us on:</h3>
+            <a class="twitter-icon" href="http://twitter.com/qtbynokia"><!-- no content --></a>
+            <a class="facebook-icon" href="http://www.facebook.com/group.php?gid=39687139470&amp;ref=ts"><!-- no content --></a>
+            <a class="youtube-icon" href="http://www.youtube.com/qtstudios"><!-- no content --></a>
+            <a class="identi-icon" href="http://www.linkedin.com/groups?home=&amp;gid=1531497"><!-- no content --></a> <!-- this is apparently linkedin - not identi -->
+            <a class="slideshare-icon" href="http://www.slideshare.net/qtbynokia"><!-- no content --></a>
+            <a class="flickr-icon" href="http://www.flickr.com/photos/qtbynokia"><!-- no content --></a>
+        </div>
+        <div class="visualClear"><!-- --></div>
+    </div>
+    
+    
+    <div class="visualClear"><!-- --></div>
+    <!-- </div> -->
+    
+    
+        <div id="frontpageflipper">
+          <div class="flippercontainer">
+            <div class="topRightCorner"><!-- --></div><div class="bottomLeftCorner"><!-- --></div>
+            
+<div class="topicflipper">
+  <!-- Inner Flipper object -->
+  <div class="flippercontainer">
+      <div class="topRightCorner"><!-- --></div><div class="bottomLeftCorner"><!-- --></div>
+      <div class="topicflipper">
+          
+          
+          
+          <table class="flippertable">
+            <tr>
+              <td class="flippernavigation">
+                <ul>
+                  
+                    <li class="flippernavitem selected firstflipperitem">
+                      <span><a
+    href="https://qt.nokia.com/home?currentflipperobject=a0bf9a58d11cf41102fb85c337476eee"
+    id="flipperitem-a0bf9a58d11cf41102fb85c337476eee"
+    class="a33941da16f01f41fcad371ad5c5703a">What can you do with Qt?</a></span>
+                    </li>
+                  
+                  
+                    <li class="flippernavitem ">
+                      <span><a
+    href="https://qt.nokia.com/home?currentflipperobject=15af4e32154819cab9929c2f241284ca"
+    id="flipperitem-15af4e32154819cab9929c2f241284ca"
+    class="a33941da16f01f41fcad371ad5c5703a">Who uses Qt?</a></span>
+                    </li>
+                  
+                  
+                    <li class="flippernavitem ">
+                      <span><a
+    href="https://qt.nokia.com/home?currentflipperobject=04fb871fbc28d8e8e46c51fe89ef8d67"
+    id="flipperitem-04fb871fbc28d8e8e46c51fe89ef8d67"
+    class="a33941da16f01f41fcad371ad5c5703a">What is Qt?</a></span>
+                    </li>
+                  
+                  
+                    <li class="flippernavitem ">
+                      <span><a
+    href="https://qt.nokia.com/home?currentflipperobject=0c96d6ef13290603cd3d8f000477b289"
+    id="flipperitem-0c96d6ef13290603cd3d8f000477b289"
+    class="a33941da16f01f41fcad371ad5c5703a">Who makes Qt?</a></span>
+                    </li>
+                  
+                  
+                    <li class="flippernavitem ">
+                      <span><a
+    href="https://qt.nokia.com/home?currentflipperobject=a3da590bb77afb7f8bd0c32e6b05ea10"
+    id="flipperitem-a3da590bb77afb7f8bd0c32e6b05ea10"
+    class="a33941da16f01f41fcad371ad5c5703a">Where can you find help?</a></span>
+                    </li>
+                  
+                  
+                    <li class="flippernavitem ">
+                      <span><a
+    href="https://qt.nokia.com/home?currentflipperobject=b67db99b642a177b54b61cde986ebe5a"
+    id="flipperitem-b67db99b642a177b54b61cde986ebe5a"
+    class="a33941da16f01f41fcad371ad5c5703a">How can you get started?</a></span>
+                    </li>
+                  
+                  
+                    <li class="flippernavitem  lastflipperitem">
+                      <span><a
+    href="https://qt.nokia.com/home?currentflipperobject=55fd2c1e781de493e9fa7d6fdbe268b4"
+    id="flipperitem-55fd2c1e781de493e9fa7d6fdbe268b4"
+    class="a33941da16f01f41fcad371ad5c5703a">Sign up for Qt Newsletters!</a></span>
+                    </li>
+                  
+                </ul>
+              </td>
+              <td class="flippercontent">
+                
+                
+                  <div class="flipperobject">
+  
+<table class="qtTable">
+<tbody>
+<tr>
+<td>&nbsp;<img class="image-left" src="../../../images/template/qt-in-use/image_tile" alt="Qt in Use" /></td>
+<td>
+<h3><a title="Platforms" class="internal-link" href="../../../../products/platform/platforms">Write code once to target multiple platforms</a></h3>
+<p>Qt allows you to write advanced applications and UIs once, and deploy them across <a title="Platforms" class="internal-link" href="../../../../products/platform/platforms">desktop and embedded operating systems</a> without rewriting the source code saving time and development cost.</p>
+</td>
+</tr>
+<tr>
+<td>&nbsp;<img class="image-left" src="../../../images/products/widgets-thumb-gauges/image_tile" alt="Widgets: thumb - gauges" /></td>
+<td>
+<h3><a title="Modular Class Library" class="internal-link" href="../../../../products/library/modular-class-library#info_gui">Create amazing user experiences</a><br /></h3>
+<p>Whether you prefer C++ or JavaScript, Qt provides the building blocks — a broad set of customizable widgets, graphics canvas, style engine and more that you need to build modern user interfaces. Incorporate <a title="Modular Class Library" class="internal-link" href="../../../../products/library/modular-class-library#advanced-3d-graphics-opengl">3D graphics</a>, <a title="Modular Class Library" class="internal-link" href="../../../../products/library/modular-class-library#info_multimedia">multimedia audio or video</a>, visual effects, and animations to set your application apart from the competition.</p>
+</td>
+</tr>
+<tr>
+<td>&nbsp;<img class="image-left" src="../../../images/products/Qt_Creator_Icon_Web.png/image_tile" alt="Qt Creator Icon" /></td>
+<td>
+<h3><a title="Modular Class Library" class="internal-link" href="../../../../products/library/modular-class-library">Do more with less (and faster)</a><br /></h3>
+<p>With the new Qt Creator <a title="Qt Development Tools" class="internal-link" href="../../../../products/developer-tools/developer-tools">cross-platform IDE</a>, or on its own, Qt is fast to learn and easy to use.&nbsp; And Qt's <a title="Modular Class Library" class="internal-link" href="../../../../products/library/modular-class-library">modular class library</a> means that you can spend more time on innovation, and less time on infrastructure coding getting your software to market faster.</p>
+</td>
+</tr>
+<tr>
+<td>&nbsp;<img class="image-left" src="../../../images/products/webkit-logo/image_tile" alt="Logo - WebKit" /></td>
+<td>
+<h3><a title="Modular Class Library" class="internal-link" href="../../../../products/library/modular-class-library#info_webkit">Blend web and native code in a single application</a><br /></h3>
+<p>Qt's <a title="Modular Class Library" class="internal-link" href="../../../../products/library/modular-class-library#info_webkit">integration with the WebKit web rendering engine</a> means that you can quickly incorporate content and services from the Web into your native
+application, and can use the web environment to deliver your services
+and functionality impressing your users in the process.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+                
+              </td>
+            </tr>
+          </table>
+      </div>
+  </div>
+  
+</div>
+
+          </div>
+        </div>
+    
+
+    
+    
+    <div class="visualClear"><!-- --></div>
+<div class="documentActions">
+    
+
+    <h5 class="hiddenStructure">Document Actions</h5>
+
+    <ul>
+    
+        <li id="document-action-sendto">
+            <a href="https://qt.nokia.com/home/sendto_form"
+               title="">Send this</a>
+        </li>
+    
+    
+        <li id="document-action-print">
+            <a href="javascript:this.print();" title="">Print this</a>
+        </li>
+    
+
+    </ul>
+    
+
+    
+
+</div>
+
+<div class="reviewHistory" id="review-history">
+    
+</div>
+    
+</div>
+                    
+                    </div>
+                    
+
+                    
+                    
+                      
+    
+
+
+
+
+                    
+                    
+
+                    <span id="contentBottomLeft"></span>
+                    <span id="contentBottomRight"></span>
+
+                  </div>
+
+                </div>
+
+              
+            </td>
+            
+
+            
+            
+            
+          </tr>
+        </tbody>
+      </table>
+      
+
+      <div class="visualClear" id="clear-space-before-footer"><!-- --></div>
+      
+      
+
+      
+
+        <div id="footer-navigation-wrapper">
+    <div id="footer-navigation">
+        <div class="footer"><ul class="first">
+            <li class="title"><a href="http://qt.nokia.com/products">Qt Info</a></li>
+            <li><a href="http://qt.nokia.com/downloads">Downloads</a></li>
+            <li><a href="http://qt.nokia.com/products">Features &amp; benefits</a></li>
+            <li><a href="http://qt.nokia.com/services-partners/qt-in-education">Qt in Education </a></li>
+            <li><a href="http://qt.nokia.com/developer/learning">Learning Qt</a></li>
+            <li><a href="http://qt.nokia.com/services-partners">Partnering</a></li>
+          </ul>
+          <ul>
+            <li class="title"><a href="#">Tasks</a></li>
+            <li><a href="http://qt.nokia.com/downloads#commercial">Evaluating Qt</a></li>
+            <li><a href="http://shop.qt.nokia.com/">Purchasing Qt</a></li>
+            <li><a href="http://qt.nokia.com/customerportal">Customer Portal</a></li>
+            <li><a href="http://bugreports.qt.nokia.com/">Bug reporting</a></li>
+            <li><a href="http://qt.nokia.com/products/forms/downloading/newsletter">Newsletter sign-up</a></li>
+          </ul>
+          <ul>
+            <li class="title"><a href="#">Popular</a></li>
+            <li><a href="http://qt.nokia.com/developer/qt-qtcreator-prerelease">Qt Creator 2.1 RC</a></li>
+            <li><a href="http://qt.nokia.com/developer/eclipse-integration">Eclipse plug-in</a></li>
+            <li><a href="http://doc.trolltech.com/qtjambi-4.5.2_01/com/trolltech/qt/qtjambi-index.html">Jambi, Java bindings</a></li>
+            <li><a href="http://qt.nokia.com/products/developer-tools">Qt Creator</a></li>
+            <li><a href="http://qt.nokia.com/developer/qt-roadmap">Qt Road map</a></li>
+          </ul>
+          <ul>
+            <li class="title"><a href="#">Activity</a></li>
+            <li><a href="http://labs.trolltech.com/blogs/">Developer Blogs</a></li>
+            <li><a href="http://blog.qt.nokia.com/">The Qt Blog</a></li>
+            <li><a href="http://qt.nokia.com/about/news">Official News</a></li>
+            <li><a href="http://qt.nokia.com/about/events">Events</a></li>
+            <li><a href="http://blog.qt.nokia.com/qt-activity-stream/">Activity Stream</a></li>
+          </ul>
+          <ul class="last">
+            <li class="title"><a href="http://qt.nokia.com/about/press-center">Contact</a></li>
+            <li><a href="http://qt.nokia.com/about/contact-us">Contact us</a></li>
+            <li><a href="http://qt.nokia.com/customerportal">Customer support</a></li>
+            <li>&nbsp;</li>
+            <li><a href="http://twitter.com/qtbynokia">Qt on Twitter</a> / <a href="http://www.youtube.com/user/QtStudios">Youtube</a></li>
+            <li><a href="http://www.facebook.com/group.php?gid=39687139470">Facebook</a> / <a href="http://www.linkedin.com/groupInvitation?groupID=1531497">Linkedin</a></li>
+          </ul></div>
+        <div class="visualClear"><!-- --></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-4457116-1");
+pageTracker._trackPageview();
+</script>
+<!-- Google Code for Arrival Conversion Page -->
+<script type="text/javascript">
+<!--
+var google_conversion_id = 1028956690;
+var google_conversion_language = "en";
+var google_conversion_format = "3";
+var google_conversion_color = "ffffff";
+var google_conversion_label = "xfR-CK6QzAEQksTS6gM";
+var google_conversion_value = 0;
+//-->
+</script>
+<script type="text/javascript" src="http://www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/1028956690/?label=xfR-CK6QzAEQksTS6gM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+<div id="site-actions-wrapper">
+    <div class="contentWidth">
+    <a href="http://qt.nokia.com/about/careers"
+       id="link-to-nokia" title="Nokia is hiring"><span
+    class="hiddenStructure">Official Nokia site</span></a>    
+    
+    <ul id="portal-siteactions">
+
+        <li id="siteaction-sitemap"><a
+    href="https://qt.nokia.com/sitemap" accesskey="3"
+    title="Site Map">Site Map</a></li>
+        <li id="siteaction-accessibility"><a
+    href="https://qt.nokia.com/accessibility-info"
+    accesskey="0" title="Accessibility">Accessibility</a></li>
+        <li id="siteaction-contact"><a
+    href="https://qt.nokia.com/about/contact-us"
+    accesskey="9" title="Contact">Contact</a></li>
+    </ul>
+    </div>
+</div>
+
+<div id="footer-wrapper">
+    <div id="qt-footer" class="discreet contentWidth">
+        <p>
+            
+            <acronym title="Copyright">&copy;</acronym>
+            2008-2011 Nokia Corporation and/or its subsidiaries. Nokia, Qt and their respective logos are trademarks of Nokia Corporation in Finland and/or other countries worldwide. 
+            
+        </p>
+        <p>
+            All other trademarks are property of their respective owners.
+            <a href="https://qt.nokia.com/about/privacy-policy"
+               title="Privacy Policy">Privacy Policy</a>
+        </p>    
+    </div>
+</div>
+
+
+      
+
+      <div class="visualClear"><!-- --></div>
+    </div>
+<div id="kss-spinner"><img alt=""
+                           src="https://qt.nokia.com/spinner.gif" /></div>
+</body>
+</html>
+

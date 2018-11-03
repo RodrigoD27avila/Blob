@@ -1,0 +1,35 @@
+#!/bin/bash
+# Criado em:qua 04/fev/2009 hs 13:48
+# Last Change: qua 04/fev/2009 hs 13:48
+# Proposito do script: descompactar arquivos
+# Autor: Sérgio Luiz Araújo Silva
+# site: http://vivaotux.blogspot.com
+# código otimizado por Júlio César Neves
+# através da lista de shell script do yahoo
+# http://br.groups.yahoo.com/group/shell-script/message/28567
+
+extract(){
+    for file in "$@"
+    do
+        if [ -f "$file" ]
+        then
+            case "$file" in
+                *.tar.bz2|*.tbz2) tar xvjf "$file";;
+                *.tar.gz|*.tgz) tar xvzf "$file";; 
+				*.bz2) bunzip2 "$file";;
+                *.rar) rar x "$file";;
+                *.gz) gunzip "$file";;
+                *.tar) tar xvf "$file";;
+                *.zip) unzip "$file";;
+                *.Z) uncompress "$file";;
+                *.7z) 7z x "$file";;
+                *) echo "não sei como extrair '$file'...";;
+            esac || echo Arquivo $file corrompido
+        else
+            echo "'$file' não é um arquivo válido"
+        fi
+    done
+}
+
+extract $1
+
